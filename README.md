@@ -2,13 +2,58 @@
 
 # Female Portrait Prompt Director Skill
 
-Female Portrait Prompt Director Skill is a structured prompt-generation and visual-direction system for AI image creation. V1.4.1 routes each request through a single on-demand style file, locks explicit parameters or authorized reference-image subjects, and produces either a coherent photographed prompt or a direct identity- or product-preserving image edit.
+Turn a few portrait inputs into a coherent, camera-ready scene—or directly generate an image while preserving an authorized person or product reference.
 
-This project is not a generic prompt collection. It is an extensible female portrait prompt Skill framework.
+[![skills.sh](https://skills.sh/b/liyue-aigc/female-portrait-director)](https://skills.sh/liyue-aigc/female-portrait-director)
+[![GitHub stars](https://img.shields.io/github/stars/liyue-aigc/female-portrait-director?style=flat)](https://github.com/liyue-aigc/female-portrait-director/stargazers)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-## Project Scope
+This is not a generic prompt collection. It locks explicit requirements, chooses one visual route, and directs the subject, action, clothing, scene, camera, lighting, and finish as one photographable moment. Subjects are fictional, clearly adult women unless an authorized adult reference is provided.
 
-Generate complete prompts from a small set of input parameters. Preserve the user's explicit requirements while visually expanding facial features, body shape, outfit, scene, camera and pose, lighting, filters, platform purpose, and negative constraints. Subjects must be clearly adult women. Outputs emphasize realistic photography, restrained expression, visual coherence, and stable generation.
+## See the difference
+
+| Clean lifestyle | Urban fashion | Gufeng xianxia |
+| --- | --- | --- |
+| ![Natural cafe lifestyle portrait](assets/cases/01-clean-lifestyle.png) | ![Urban storefront fashion portrait](assets/cases/02-urban-fashion.png) | ![Moon-white gufeng xianxia portrait](assets/cases/03-gufeng-xianxia.png) |
+| E-commerce model | Retro Hong Kong | New Chinese |
+| ![Garment-first ecommerce model image](assets/cases/04-ecommerce-model.png) | ![Retro Hong Kong cinematic portrait](assets/cases/05-retro-hongkong.png) | ![Modern New Chinese tea-room portrait](assets/cases/06-new-chinese.png) |
+
+Each case proves a different job: natural lifestyle direction, outfit-led street photography, complex costume organization, garment-first commercial framing, cinematic atmosphere, and restrained Eastern negative space. See the [six-case publishing pack](docs/女性人像提示词导演-6个视觉案例发布包.md) for the inputs and release copy.
+
+## Try it in 60 seconds
+
+Install with the open-source `skills` CLI:
+
+```bash
+npx skills add https://github.com/liyue-aigc/female-portrait-director/tree/main/skills/female-portrait-director -g
+```
+
+Start a new agent session, then paste:
+
+```text
+Use $female-portrait-director to generate an image directly:
+Style: clean lifestyle portrait
+Scene: quiet cafe window seat in the afternoon
+Outfit: ivory knitted cardigan + light inner top
+Mood: gentle, natural, clearly adult
+Aspect ratio: 3:4
+```
+
+For a copy-ready prompt instead of an image, remove “generate an image directly.” The Skill returns locked parameters, a directed prompt, and negative constraints.
+
+## Agent compatibility
+
+The complete 55-file distribution package has been installer-verified with the current `skills` CLI for the following targets:
+
+| Agent | Install package | Prompt workflow | Direct image workflow |
+| --- | --- | --- | --- |
+| Codex | Verified | Runtime-verified | Supported when image generation is available |
+| Claude Code | Verified | Agent Skills compatible | Depends on the connected image tool |
+| Cursor | Verified | Agent Skills compatible | Depends on the connected image tool |
+| GitHub Copilot | Verified | Agent Skills compatible | Depends on the connected image tool |
+| Gemini CLI | Verified | Agent Skills compatible | Depends on the connected image tool |
+
+“Installer-verified” means the CLI copied `SKILL.md` and every referenced route, tool, safety file, and example into the target skill package. Only Codex was runtime-executed in this release environment; the other rows are packaging and specification compatibility claims, not claims that every host provides an image model.
 
 ## Supported Styles
 
@@ -37,37 +82,15 @@ Generate complete prompts from a small set of input parameters. Preserve the use
 - Preserve clothing-display priority for e-commerce images and explicit safety boundaries for curve-focused portraits.
 - Preserve authorized selfie identity or product core visuals for direct reference-image generation.
 
-## Quick Start
+## Installation details
 
-When using this repository as a Codex Skill, invoke `$female-portrait-director`. Minimal example:
-
-```text
-Style: clean lifestyle portrait
-Scene: window seat in a cafe
-Outfit: white knitted cardigan + light-colored inner layer
-Mood: clean and gentle
-Aspect ratio: 9:16
-```
-
-The system returns locked parameters, a complete copy-ready prompt, and negative constraints. See [parameter_schema.md](skill/parameter_schema.md) for the full input schema and [usage_examples.md](skill/usage_examples.md) for examples.
-
-## Installation
-
-### One-command install with npx
-
-Requires [Node.js](https://nodejs.org/) with `npx`. Install the Skill globally for Codex:
-
-```bash
-npx skills@latest add liyue-aigc/female-portrait-director -g -a codex -y
-```
-
-Update the installed Skill later:
+Requires [Node.js](https://nodejs.org/) for the one-command installer. Update an installed copy with:
 
 ```bash
 npx skills@latest update female-portrait-director -g -y
 ```
 
-### Manual install with Git
+### Manual Codex install with Git
 
 Alternatively, clone the repository into your Codex skills directory.
 

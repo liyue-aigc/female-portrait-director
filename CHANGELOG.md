@@ -1,5 +1,15 @@
 # Changelog
 
+## Unreleased
+
+Distribution and adoption update:
+
+- Added a complete 55-file installable package at `skills/female-portrait-director/`
+- Changed public one-command installation examples to target the complete package instead of the root compatibility entry
+- Installer-verified the package for Codex, Claude Code, Cursor, GitHub Copilot, and Gemini CLI
+- Added six visual case-study assets and platform-specific release copy
+- Reworked the English and Chinese README above the fold around outcomes, examples, installation, and compatibility
+
 ## FEMALE-PORTRAIT-DIRECTOR-V1.4.1
 
 Authorized reference-image generation patch.

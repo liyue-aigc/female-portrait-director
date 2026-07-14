@@ -2,13 +2,58 @@
 
 # 女性人像提示词导演 Skill
 
-女性人像提示词导演 Skill 是一个面向 AI 生图场景的结构化女性人像提示词生成与视觉导演系统。V1.4.1 会通过唯一风格注册表按需加载单一路由，锁定明确参数或授权参考图主体，并生成完整摄影导演式提示词，或直接生成保留人物身份与产品核心视觉的目标图片。
+输入少量写真参数，生成一张人物、动作、服装、场景、镜头与光线彼此成立的照片；也可以直接出图，并保留已授权的人物或产品参考主体。
 
-本项目不是普通提示词合集，而是一个可扩展的女性人像提示词 Skill 框架。
+[![skills.sh](https://skills.sh/b/liyue-aigc/female-portrait-director)](https://skills.sh/liyue-aigc/female-portrait-director)
+[![GitHub stars](https://img.shields.io/github/stars/liyue-aigc/female-portrait-director?style=flat)](https://github.com/liyue-aigc/female-portrait-director/stargazers)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-## 项目定位
+它不是普通提示词合集。Skill 会锁定用户的明确要求，只选择一个视觉 Route，再把人物、事件、服装、空间、镜头、光线和滤镜组织成同一个可拍摄瞬间。没有授权参考图时，人物默认为虚构且明确成年的女性。
 
-通过少量输入参数生成完整提示词，并在保留用户明确要求的前提下扩写五官、身形、服装、场景、镜头姿态、光线、滤镜、平台用途和负面约束。默认人物必须是明确成年的女性，输出强调真实摄影质感、克制表达、画面统一和稳定生成。
+## 先看结果
+
+| 清纯生活 | 都市时尚 | 古风仙侠 |
+| --- | --- | --- |
+| ![咖啡馆自然生活照](assets/cases/01-clean-lifestyle.png) | ![玻璃橱窗都市街拍](assets/cases/02-urban-fashion.png) | ![月白冰蓝古风仙侠写真](assets/cases/03-gufeng-xianxia.png) |
+| 电商模特 | 复古港风 | 新中式 |
+| ![服装展示优先的电商模特图](assets/cases/04-ecommerce-model.png) | ![复古港风电影人像](assets/cases/05-retro-hongkong.png) | ![新中式茶室留白人像](assets/cases/06-new-chinese.png) |
+
+六个案例分别验证：自然生活瞬间、穿搭街拍导演、复杂古风造型组织、服装展示优先级、港片氛围和东方留白。完整输入与连续发布文案见[六个视觉案例发布包](docs/女性人像提示词导演-6个视觉案例发布包.md)。
+
+## 60 秒开始使用
+
+使用开源 `skills` CLI 一键安装：
+
+```bash
+npx skills add https://github.com/liyue-aigc/female-portrait-director/tree/main/skills/female-portrait-director -g
+```
+
+重新开始一个 Agent 对话，然后粘贴：
+
+```text
+使用 $female-portrait-director 直接生成图片：
+风格：清纯生活照
+场景：午后安静的咖啡馆靠窗座位
+服装：米白针织开衫 + 浅色内搭
+气质：温柔、自然、明确成年
+画幅：3:4
+```
+
+如果只需要可复制提示词，删除“直接生成图片”即可。Skill 会返回参数锁定、导演式提示词和负面约束。
+
+## Agent 兼容性
+
+当前 `skills` CLI 已对完整的 55 文件分发包完成以下目标端安装验证：
+
+| Agent | 安装包 | 提示词工作流 | 直接生图工作流 |
+| --- | --- | --- | --- |
+| Codex | 已验证 | 已实机运行 | 宿主提供生图能力时支持 |
+| Claude Code | 已验证 | 兼容 Agent Skills | 取决于所连接的生图工具 |
+| Cursor | 已验证 | 兼容 Agent Skills | 取决于所连接的生图工具 |
+| GitHub Copilot | 已验证 | 兼容 Agent Skills | 取决于所连接的生图工具 |
+| Gemini CLI | 已验证 | 兼容 Agent Skills | 取决于所连接的生图工具 |
+
+“安装包已验证”表示安装器会把 `SKILL.md` 以及它引用的全部 Route、工具、安全规则和示例复制到目标 Skill 中。本次发布环境只对 Codex 做了实际运行验证；其余行表示分发结构与 Agent Skills 规范兼容，并不表示每个宿主都自带图像模型。
 
 ## 支持风格
 
@@ -37,37 +82,15 @@
 - 为电商图片保留服装展示优先级，为曲线风格保留明确的安全边界。
 - 支持授权自拍五官或产品核心视觉锁定后的参考图直接生成。
 
-## 快速开始
+## 安装与更新
 
-将仓库作为 Codex Skill 使用时，可直接调用 `$female-portrait-director`。最简输入示例：
-
-```text
-风格：清纯生活照
-场景：咖啡馆靠窗座位
-服装：白色针织开衫 + 浅色内搭
-气质：清纯温柔
-画幅：9:16
-```
-
-系统将输出参数锁定结果、可直接复制的完整提示词和负面约束。完整调用字段参见 [parameter_schema.md](skill/parameter_schema.md)，示例参见 [usage_examples.md](skill/usage_examples.md)。
-
-## 安装方式
-
-### 使用 npx 一键安装
-
-需要安装包含 `npx` 的 [Node.js](https://nodejs.org/)。执行以下命令，将 Skill 全局安装到 Codex：
-
-```bash
-npx skills@latest add liyue-aigc/female-portrait-director -g -a codex -y
-```
-
-后续更新已安装的 Skill：
+一键安装需要包含 `npx` 的 [Node.js](https://nodejs.org/)。后续更新已安装的 Skill：
 
 ```bash
 npx skills@latest update female-portrait-director -g -y
 ```
 
-### 使用 Git 手动安装
+### 使用 Git 手动安装到 Codex
 
 也可以将仓库克隆到 Codex 的 skills 目录。
 

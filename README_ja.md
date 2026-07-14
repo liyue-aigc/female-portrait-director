@@ -58,7 +58,7 @@
 `npx` を含む [Node.js](https://nodejs.org/) が必要です。Skill を Codex にグローバルインストールします。
 
 ```bash
-npx skills@latest add liyue-aigc/female-portrait-director -g -a codex -y
+npx skills@latest add https://github.com/liyue-aigc/female-portrait-director/tree/main/skills/female-portrait-director -g -a codex -y
 ```
 
 インストール済み Skill を後から更新する場合：

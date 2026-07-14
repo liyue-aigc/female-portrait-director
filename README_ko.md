@@ -58,7 +58,7 @@
 `npx`가 포함된 [Node.js](https://nodejs.org/)가 필요합니다. Skill을 Codex에 전역으로 설치합니다.
 
 ```bash
-npx skills@latest add liyue-aigc/female-portrait-director -g -a codex -y
+npx skills@latest add https://github.com/liyue-aigc/female-portrait-director/tree/main/skills/female-portrait-director -g -a codex -y
 ```
 
 설치된 Skill을 나중에 업데이트하려면:

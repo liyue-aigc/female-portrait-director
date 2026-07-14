@@ -12,6 +12,10 @@
 - 参数示例补充
 - 出图稳定性测试说明
 
+## 分发目录同步
+
+仓库根目录的 `SKILL.md`、`skill/`、`examples/`、`agents/`、`docs/prompt_safety.md` 和 `docs/versioning.md` 是维护源；`skills/female-portrait-director/` 是 `skills` CLI 使用的完整分发副本。修改维护源后，请同步更新分发目录，并分别执行 Skill 校验和本地安装测试，避免发布只包含入口文件或引用失效的版本。
+
 ## 禁止提交
 
 - 色情裸露内容
