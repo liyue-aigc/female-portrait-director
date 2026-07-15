@@ -1,6 +1,6 @@
 # 女性人像提示词导演 Skill｜参考图主体锁定规则
 
-版本编号：`FEMALE-PORTRAIT-DIRECTOR-V1.4.1`
+版本编号：`FEMALE-PORTRAIT-DIRECTOR-V1.5`
 
 文档类型：核心规则文档
 

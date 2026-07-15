@@ -2,7 +2,7 @@
 
 # 女性人像提示词导演 Skill｜参数锁定规则
 
-版本编号：`FEMALE-PORTRAIT-DIRECTOR-V1.4.1`
+版本编号：`FEMALE-PORTRAIT-DIRECTOR-V1.5`
 文档类型：核心规则文档
 适用范围：所有 routes、overlays、tools、examples、tests 中涉及用户参数解析、提示词生成、提示词优化、参数组合推荐、审查友好改写、图片反推提示词的任务
 核心职责：确保用户明确输入的参数不被替换、不被弱化、不被擅自优化为其他方向

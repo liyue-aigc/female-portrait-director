@@ -1,14 +1,23 @@
 # Changelog
 
-## Unreleased
+## FEMALE-PORTRAIT-DIRECTOR-V1.5
 
-Distribution and adoption update:
+Five-route expansion, onboarding, and distribution update:
+
+- Expanded the implemented style set from 14 to 19 routes
+- Added `ultra-close-real-face` for unretouched ultra-close facial realism
+- Added `ancient-lady-dewy-makeup` for noblewoman gufeng dewy-makeup direction
+- Added `black-pearl-dark-gold-ccd`, `soft-ccd-energetic-voluptuous`, and `cold-white-clear-ccd-curve` with compound routing fingerprints that keep the three CCD curve systems distinct
+- Added `skill/help.md` with the first-use ready message, 19-style menu, basic and advanced templates, route-plus-overlay guidance, and a complete parameter-to-five-paragraph-prompt example
+- Updated the Skill card default prompt so a parameter-free first invocation opens the V1.5 tutorial
+- Added explicit Route / Overlay compatibility rules and V1.5 fallback defaults
 
 - Added a complete 55-file installable package at `skills/female-portrait-director/`
 - Changed public one-command installation examples to target the complete package instead of the root compatibility entry
 - Installer-verified the package for Codex, Claude Code, Cursor, GitHub Copilot, and Gemini CLI
 - Added six visual case-study assets and platform-specific release copy
 - Reworked the English and Chinese README above the fold around outcomes, examples, installation, and compatibility
+- Expanded the installable package to 61 files for V1.5
 
 ## FEMALE-PORTRAIT-DIRECTOR-V1.4.1
 

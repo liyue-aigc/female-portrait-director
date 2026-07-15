@@ -3,8 +3,17 @@
 当前公开版本：
 
 ```text
-FEMALE-PORTRAIT-DIRECTOR-V1.4.1
+FEMALE-PORTRAIT-DIRECTOR-V1.5
 ```
+
+## V1.5 变更摘要
+
+- 将已实现主 Route 从 14 条扩展到 19 条。
+- 新增 `ultra-close-real-face`、`ancient-lady-dewy-makeup`、`black-pearl-dark-gold-ccd`、`soft-ccd-energetic-voluptuous` 和 `cold-white-clear-ccd-curve`。
+- 为三条 CCD 曲线路由增加复合特征指纹，按时间、主色、光线、气质、身形和穿搭共同分流，禁止仅凭 `CCD` 或 `曲线` 触发。
+- 新增 `skill/help.md`，在安装后首次无参数调用、帮助请求或只调用 Skill 名称时展示 19 风格菜单、调用模板、组合规则和参数转五段式详细提示词示例。
+- 更新 `agents/openai.yaml` 默认提示语，让技能卡片首次调用直接进入 V1.5 新手教学。
+- 新增 Route / Overlay 兼容矩阵、V1.5 冲突消解规则和缺省参数摘要。
 
 ## V1.4.1 变更摘要
 

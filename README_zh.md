@@ -43,7 +43,7 @@ npx skills add https://github.com/liyue-aigc/female-portrait-director/tree/main/
 
 ## Agent 兼容性
 
-当前 `skills` CLI 已对完整的 55 文件分发包完成以下目标端安装验证：
+当前 `skills` CLI 已对完整的 61 文件分发包完成以下目标端安装验证：
 
 | Agent | 安装包 | 提示词工作流 | 直接生图工作流 |
 | --- | --- | --- | --- |
@@ -71,6 +71,13 @@ npx skills add https://github.com/liyue-aigc/female-portrait-director/tree/main/
 - 东方丰腴写真
 - 清冷仙气古风增强版
 - 明媚华贵古风增强版
+- 超近景真实人脸人像
+- 古风贵女水光妆
+- 黑珍珠墨金CCD曲线生活照
+- 元气丰腴柔光CCD生活照
+- 冷白清透CCD曲线生活照
+
+完整的新手教学、19 风格菜单和参数转五段式详细提示词示例见 [首次使用帮助](skill/help.md)。
 
 ## 核心能力
 
@@ -111,6 +118,8 @@ git clone https://github.com/liyue-aigc/female-portrait-director.git "${CODEX_HO
 ```text
 $female-portrait-director
 ```
+
+首次无参数调用会显示 V1.5 教程：19 种已实现风格、基础与高级模板、风格 + 气质组合规则、参数生成详细提示词示例，以及直接出图与授权参考图用法。
 
 ## 示例：从参数到导演式扩写
 
@@ -155,6 +164,7 @@ $female-portrait-director
 ├── skill/
 │   ├── skill.md
 │   ├── style-registry.md
+│   ├── help.md
 │   ├── public_instructions.md
 │   ├── parameter_schema.md
 │   ├── usage_examples.md
@@ -163,12 +173,14 @@ $female-portrait-director
 │   │   ├── director-expansion.md
 │   │   └── visual-libraries.md
 │   └── routes/
+│       ├── beauty/
 │       ├── commercial/
 │       ├── curve/
 │       ├── fantasy/
 │       ├── fashion/
 │       ├── lifestyle/
-│       └── oriental/
+│       ├── oriental/
+│       └── realism/
 ├── docs/
 │   ├── style_guide.md
 │   ├── prompt_safety.md
@@ -188,5 +200,5 @@ $female-portrait-director
 ## 作者与版本
 
 - 作者：李岳
-- 版本：`FEMALE-PORTRAIT-DIRECTOR-V1.4.1`
+- 版本：`FEMALE-PORTRAIT-DIRECTOR-V1.5`
 - 项目：`Female Portrait Prompt Director Skill`

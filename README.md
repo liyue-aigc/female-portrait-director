@@ -43,7 +43,7 @@ For a copy-ready prompt instead of an image, remove “generate an image directl
 
 ## Agent compatibility
 
-The complete 55-file distribution package has been installer-verified with the current `skills` CLI for the following targets:
+The complete 61-file distribution package has been installer-verified with the current `skills` CLI for the following targets:
 
 | Agent | Install package | Prompt workflow | Direct image workflow |
 | --- | --- | --- | --- |
@@ -71,6 +71,13 @@ The complete 55-file distribution package has been installer-verified with the c
 - Oriental voluptuous portraits
 - Cold xianxia enhanced portraits
 - Bright luxury gufeng portraits
+- Ultra-close realistic face portraits
+- Ancient noblewoman dewy-makeup portraits
+- Black-pearl dark-gold CCD curve portraits
+- Energetic voluptuous soft-CCD lifestyle portraits
+- Cold-white clear CCD curve portraits
+
+See the [first-use guide](skill/help.md) for the 19-style menu, input templates, route-plus-overlay combination rules, and a complete parameter-to-five-paragraph-prompt example.
 
 ## Core Capabilities
 
@@ -111,6 +118,8 @@ Restart Codex or start a new conversation, then invoke:
 ```text
 $female-portrait-director
 ```
+
+The first parameter-free invocation displays the V1.5 tutorial: all 19 implemented styles, basic and advanced templates, style-plus-mood combination guidance, a detailed prompt example, and direct-image or authorized-reference workflows.
 
 ## Example: Parameters to Directed Prompt
 
@@ -155,6 +164,7 @@ Platform use: Character portrait
 ├── skill/
 │   ├── skill.md
 │   ├── style-registry.md
+│   ├── help.md
 │   ├── public_instructions.md
 │   ├── parameter_schema.md
 │   ├── usage_examples.md
@@ -163,12 +173,14 @@ Platform use: Character portrait
 │   │   ├── director-expansion.md
 │   │   └── visual-libraries.md
 │   └── routes/
+│       ├── beauty/
 │       ├── commercial/
 │       ├── curve/
 │       ├── fantasy/
 │       ├── fashion/
 │       ├── lifestyle/
-│       └── oriental/
+│       ├── oriental/
+│       └── realism/
 ├── docs/
 │   ├── style_guide.md
 │   ├── prompt_safety.md
@@ -188,5 +200,5 @@ This project is licensed under the [MIT License](LICENSE). The MIT License permi
 ## Author and Version
 
 - Author: Li Yue (李岳)
-- Version: `FEMALE-PORTRAIT-DIRECTOR-V1.4.1`
+- Version: `FEMALE-PORTRAIT-DIRECTOR-V1.5`
 - Project: `Female Portrait Prompt Director Skill`
