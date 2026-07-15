@@ -2,7 +2,7 @@
 
 # 女性人像提示词导演 Skill｜核心导演流程
 
-版本编号：`FEMALE-PORTRAIT-DIRECTOR-V1.5`
+版本编号：`FEMALE-PORTRAIT-DIRECTOR-V1.6`
 文档类型：核心导演流程文档
 适用范围：女性人像提示词生成、风格路由、参数扩写、提示词优化、失败诊断、参数组合推荐、审查友好改写、图片反推提示词、参考图保留直接生成
 核心定位：接收用户输入，完成参数或参考图主体锁定、风格路由、导演式扩写和最终输出
@@ -283,7 +283,7 @@ GPT Image 2 审查
 一次只输出一个核心文档；
 文档内容必须完整，不得只写摘要；
 不得与既有版本规则冲突；
-当前版本统一使用 FEMALE-PORTRAIT-DIRECTOR-V1.5。
+当前版本统一使用 FEMALE-PORTRAIT-DIRECTOR-V1.6。
 ```
 
 ---
@@ -749,6 +749,20 @@ Route 负责风格细节。
 清冷仙气古风增强版 → skill/routes/fantasy/cold-xianxia-enhanced.md
 明媚华贵古风增强版 → skill/routes/fantasy/bright-luxury-gufeng.md
 ```
+
+---
+### 11.3 V1.5 / V1.6 新增 6 个 route
+
+```text
+超近景真实人脸人像 → skill/routes/realism/ultra-close-real-face.md
+古风贵女水光妆 → skill/routes/beauty/ancient-lady-dewy-makeup.md
+黑珍珠墨金CCD曲线生活照 → skill/routes/curve/black-pearl-dark-gold-ccd.md
+元气丰腴柔光CCD生活照 → skill/routes/curve/soft-ccd-energetic-voluptuous.md
+冷白清透CCD曲线生活照 → skill/routes/curve/cold-white-clear-ccd-curve.md
+低调电影感摄影 → skill/routes/cinematic/low-key-cinematic-photography.md
+```
+
+这些 Route 必须按 [../../style-registry.md](../../style-registry.md) 的复合指纹选择唯一主 Route，不得同时加载两个风格文件。
 
 ---
 ## 12\. 第 9 步：判断是否叠加 Overlay
@@ -1317,7 +1331,7 @@ Curve 类、东方丰腴、纯欲曲线、轻熟曲线必须重点检查。
 最终提示词必须像一张真实可拍摄或可信生成的照片，而不是字段拼接。
 ```
 
-所有输出必须服务于 V1.5 的核心目标：
+所有输出必须服务于 V1.6 的核心目标：
 
 ```text
 稳定、好看、可复制、可扩展、可维护。

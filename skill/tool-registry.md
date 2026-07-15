@@ -1,6 +1,6 @@
 # 女性人像提示词导演 Skill｜轻量工具注册表
 
-版本编号：`FEMALE-PORTRAIT-DIRECTOR-V1.5`
+版本编号：`FEMALE-PORTRAIT-DIRECTOR-V1.6`
 
 工具模块用于处理明确的功能型任务。命中工具任务时，先读取一个最匹配的工具文件，再按需读取主 Route、Overlay、核心规则和参考库。
 

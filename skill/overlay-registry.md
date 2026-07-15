@@ -1,6 +1,6 @@
 # 女性人像提示词导演 Skill｜轻量 Overlay 注册表
 
-版本编号：`FEMALE-PORTRAIT-DIRECTOR-V1.5`
+版本编号：`FEMALE-PORTRAIT-DIRECTOR-V1.6`
 
 Overlay 只增强人物气质，不替代主 Route。仅在用户明确表达气质倾向，或主 Route 需要稳定化补充时，读取一个最匹配的 Overlay 文件。没有明确需要时不加载。
 
@@ -22,4 +22,4 @@ Overlay 只增强人物气质，不替代主 Route。仅在用户明确表达气
 - Overlay 只能调整气质、眼神、表情、姿态、妆容强度、穿搭细节和少量光线色调。
 - Overlay 不得覆盖用户锁定参数，不得把生活照改成棚拍、把都市街拍改成古风或改变商业用途。
 - 一个请求默认只读取一个 Overlay。确需组合时，只保留兼容且不冲突的增强项。
-- V1.5 新 Route 的推荐兼容关系以 [style-registry.md](style-registry.md) 的“Route 与 Overlay 组合”表为准。Overlay 不得改变超近景真实纹理、水光显妆、墨金夜间直闪、元气亮色柔闪或日间冷白高色温等主 Route 指纹。
+- V1.5 / V1.6 新 Route 的推荐兼容关系以 [style-registry.md](style-registry.md) 的“Route 与 Overlay 组合”表为准。Overlay 不得改变超近景真实纹理、水光显妆、低照度连续光电影静帧、墨金夜间直闪、元气亮色柔闪或日间冷白高色温等主 Route 指纹。

@@ -43,7 +43,7 @@ For a copy-ready prompt instead of an image, remove “generate an image directl
 
 ## Agent compatibility
 
-The complete 61-file distribution package has been installer-verified with the current `skills` CLI for the following targets:
+The complete 62-file distribution package has been installer-verified with the current `skills` CLI for the following targets:
 
 | Agent | Install package | Prompt workflow | Direct image workflow |
 | --- | --- | --- | --- |
@@ -76,8 +76,9 @@ The complete 61-file distribution package has been installer-verified with the c
 - Black-pearl dark-gold CCD curve portraits
 - Energetic voluptuous soft-CCD lifestyle portraits
 - Cold-white clear CCD curve portraits
+- Low-key cinematic photography
 
-See the [first-use guide](skill/help.md) for the 19-style menu, input templates, route-plus-overlay combination rules, and a complete parameter-to-five-paragraph-prompt example.
+See the [first-use guide](skill/help.md) for the 20-style menu, input templates, route-plus-overlay combination rules, and a complete parameter-to-five-paragraph-prompt example.
 
 ## Core Capabilities
 
@@ -119,7 +120,7 @@ Restart Codex or start a new conversation, then invoke:
 $female-portrait-director
 ```
 
-The first parameter-free invocation displays the V1.5 tutorial: all 19 implemented styles, basic and advanced templates, style-plus-mood combination guidance, a detailed prompt example, and direct-image or authorized-reference workflows.
+The first parameter-free invocation displays the V1.6 tutorial: all 20 implemented styles, basic and advanced templates, style-plus-mood combination guidance, a detailed prompt example, and direct-image or authorized-reference workflows.
 
 ## Example: Parameters to Directed Prompt
 
@@ -200,5 +201,5 @@ This project is licensed under the [MIT License](LICENSE). The MIT License permi
 ## Author and Version
 
 - Author: Li Yue (李岳)
-- Version: `FEMALE-PORTRAIT-DIRECTOR-V1.5`
+- Version: `FEMALE-PORTRAIT-DIRECTOR-V1.6`
 - Project: `Female Portrait Prompt Director Skill`

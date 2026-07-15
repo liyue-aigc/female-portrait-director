@@ -48,8 +48,9 @@
 - 黑珍珠墨金CCD曲线生活照
 - 元气丰腴柔光CCD生活照
 - 冷白清透CCD曲线生活照
+- 低调电影感摄影
 
-以上为当前已经实现的 19 条 Route。一次参数调用只选择一个主 Route；气质方向通过兼容 Overlay 叠加。更多扩展方向可在 [style-registry.md](style-registry.md) 中预注册，但对应文件未创建前不得虚构 Route 内容。
+以上为当前已经实现的 20 条 Route。一次参数调用只选择一个主 Route；气质方向通过兼容 Overlay 叠加。更多扩展方向可在 [style-registry.md](style-registry.md) 中预注册，但对应文件未创建前不得虚构 Route 内容。
 
 ## 输出模式
 

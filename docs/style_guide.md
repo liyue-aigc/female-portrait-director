@@ -18,5 +18,11 @@
 | 东方丰腴写真 | 成熟端庄、自然丰润、东方曲线 | [oriental-voluptuous.md](../skill/routes/curve/oriental-voluptuous.md) |
 | 清冷仙气古风增强版 | 冷白、疏离、空灵仙气 | [cold-xianxia-enhanced.md](../skill/routes/fantasy/cold-xianxia-enhanced.md) |
 | 明媚华贵古风增强版 | 盛唐、红金、宫廷华服 | [bright-luxury-gufeng.md](../skill/routes/fantasy/bright-luxury-gufeng.md) |
+| 超近景真实人脸人像 | 未修图原片、真实毛孔与面部微纹理 | [ultra-close-real-face.md](../skill/routes/realism/ultra-close-real-face.md) |
+| 古风贵女水光妆 | 古风贵女身份、清透显妆、水润高光与玻璃唇 | [ancient-lady-dewy-makeup.md](../skill/routes/beauty/ancient-lady-dewy-makeup.md) |
+| 黑珍珠墨金CCD曲线生活照 | 夜间墨金暗部、暗金反光、柔和直闪 | [black-pearl-dark-gold-ccd.md](../skill/routes/curve/black-pearl-dark-gold-ccd.md) |
+| 元气丰腴柔光CCD生活照 | 明亮元气、丰腴自然曲线、亮色柔闪 | [soft-ccd-energetic-voluptuous.md](../skill/routes/curve/soft-ccd-energetic-voluptuous.md) |
+| 冷白清透CCD曲线生活照 | 日间高色温、冷白清透、纤细自然曲线 | [cold-white-clear-ccd-curve.md](../skill/routes/curve/cold-white-clear-ccd-curve.md) |
+| 低调电影感摄影 | 低照度连续光、局部照亮、可读暗部与电影静帧叙事 | [low-key-cinematic-photography.md](../skill/routes/cinematic/low-key-cinematic-photography.md) |
 
 导演式扩写规范见 [../skill/references/director-expansion.md](../skill/references/director-expansion.md)。

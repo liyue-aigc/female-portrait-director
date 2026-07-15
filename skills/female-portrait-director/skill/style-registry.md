@@ -1,6 +1,6 @@
 # 女性人像提示词导演 Skill｜轻量风格注册表
 
-版本编号：`FEMALE-PORTRAIT-DIRECTOR-V1.5`
+版本编号：`FEMALE-PORTRAIT-DIRECTOR-V1.6`
 
 本文件是唯一运行时主风格分流入口。每次请求只选择一个已经实现的主 Route。平台用途、气质 Overlay 和扩展占位不得覆盖主 Route。气质增强按需读取 [overlay-registry.md](overlay-registry.md)。
 
@@ -8,7 +8,7 @@
 
 1. 用户明确填写且已实现的写真风格。
 2. 强商业任务：电商、主图、上传服装、试衣、不要色差。
-3. V1.5 复合特征指纹：先匹配“构图 / 妆容 / 色彩 / 光线 / 身形”组合，不用单一的“曲线”“古风”或“CCD”词决定路由。
+3. V1.5 / V1.6 复合特征指纹：先匹配“构图 / 妆容 / 色彩 / 时间 / 光线 / 身形 / 叙事”组合，不用单一的“曲线”“古风”“CCD”“暗调”或“电影感”决定路由。
 4. 强曲线任务：纯欲、曲线、锁骨、腰线、小腹、大腿、身形吸引力。
 5. 其他明确风格词和整体视觉意图。
 6. 无法判断时回退到 `clean-lifestyle`。
@@ -33,6 +33,7 @@
 | `bright-luxury-gufeng` | 明媚华贵古风增强版 | fantasy | 明媚华贵、盛唐、红金、宫廷、华服、重工头饰 | [routes/fantasy/bright-luxury-gufeng.md](routes/fantasy/bright-luxury-gufeng.md) |
 | `ultra-close-real-face` | 超近景真实人脸人像 | realism | 超近景、怼脸、未修图原片、真实皮肤、毛孔、微纹理 | [routes/realism/ultra-close-real-face.md](routes/realism/ultra-close-real-face.md) |
 | `ancient-lady-dewy-makeup` | 古风贵女水光妆 | beauty | 古风贵女、水光妆、玻璃唇、贵女美妆特写、富养感 | [routes/beauty/ancient-lady-dewy-makeup.md](routes/beauty/ancient-lady-dewy-makeup.md) |
+| `low-key-cinematic-photography` | 低调电影感摄影 | cinematic | 低照度、暗背景、局部连续光、可读暗部、低饱和电影静帧 | [routes/cinematic/low-key-cinematic-photography.md](routes/cinematic/low-key-cinematic-photography.md) |
 | `black-pearl-dark-gold-ccd` | 黑珍珠墨金CCD曲线生活照 | curve | 黑珍珠、墨金、暗金反光、夜间、柔和直闪、CCD | [routes/curve/black-pearl-dark-gold-ccd.md](routes/curve/black-pearl-dark-gold-ccd.md) |
 | `soft-ccd-energetic-voluptuous` | 元气丰腴柔光CCD生活照 | curve | 柔光CCD、元气、丰腴自然曲线、亮色夏日、柔闪 | [routes/curve/soft-ccd-energetic-voluptuous.md](routes/curve/soft-ccd-energetic-voluptuous.md) |
 | `cold-white-clear-ccd-curve` | 冷白清透CCD曲线生活照 | curve | 冷白清透、日间CCD、高色温、纤细曲线、贴身针织 | [routes/curve/cold-white-clear-ccd-curve.md](routes/curve/cold-white-clear-ccd-curve.md) |
@@ -45,6 +46,7 @@
 - `丰腴 + 东方古典 / 旗袍 / 唐风丰润` 优先 `oriental-voluptuous`。
 - `超近景 / 怼脸 + 未修图 + 真实皮肤微纹理` 优先 `ultra-close-real-face`；普通美女近景、商业精修头像或证件照不得误触发。
 - `古风贵女身份 + 水光妆 / 玻璃唇 + 美妆近景` 优先 `ancient-lady-dewy-makeup`；仙侠特效优先 `gufeng-xianxia`，红金宫廷排场优先 `bright-luxury-gufeng`，现实留白东方空间优先 `new-chinese`。
+- `低照度 / 暗背景 + 局部连续光 / 环境光 + 可读暗部 + 低饱和电影静帧叙事` 优先 `low-key-cinematic-photography`；只有“黑色背景”“暗调”或“电影感”时不得误触发。
 - `黑珍珠 / 墨金暗部 + 暗金反光 + 夜间柔和直闪` 优先 `black-pearl-dark-gold-ccd`。
 - `柔光 CCD + 元气明亮 + 丰腴自然曲线 + 亮色日常穿搭` 优先 `soft-ccd-energetic-voluptuous`。
 - `冷白清透 CCD + 日间高色温 + 纤细曲线 + 贴身完整穿搭` 优先 `cold-white-clear-ccd-curve`。
@@ -60,6 +62,7 @@
 | --- | --- | --- |
 | `ultra-close-real-face` | `cold-heroine`、`gentle-sister`、`intellectual` | 超近景、真实皮肤微纹理、未修图原片质感 |
 | `ancient-lady-dewy-makeup` | `cold-heroine`、`gentle-sister`、`bright-heroine`、`intellectual` | 古风贵女身份、水光显妆、古装与头饰 |
+| `low-key-cinematic-photography` | `cold-heroine`、`gentle-sister`、`intellectual`、`cool-mature` | 低照度、单一连续主光、局部照亮、可读暗部与电影静帧叙事 |
 | `black-pearl-dark-gold-ccd` | `cold-heroine`、`cool-mature`、`mature-urban` | 黑珍珠暗部、暗金反光、夜间柔和直闪 |
 | `soft-ccd-energetic-voluptuous` | `bright-heroine`、`sweet-cool`、`gentle-sister` | 元气明亮、丰腴自然曲线、亮色柔闪 |
 | `cold-white-clear-ccd-curve` | `cold-heroine`、`gentle-sister`、`bright-heroine`、`intellectual` | 冷白高色温、日间清透 CCD、纤细自然曲线 |
@@ -78,3 +81,5 @@
 ```
 
 维护完整注册信息时读取 [references/expanded/style-registry-catalog.md](references/expanded/style-registry-catalog.md)。
+
+“电影情绪”或“暗调情绪”只有同时满足低照度、局部连续光、可读暗部、真实材质和电影静帧叙事的完整指纹时，才映射到 `low-key-cinematic-photography`；否则仍视为未实现扩展方向或回退到更通用的已实现 Route。

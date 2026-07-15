@@ -1,5 +1,15 @@
 # Changelog
 
+## FEMALE-PORTRAIT-DIRECTOR-V1.6
+
+Low-key cinematic route and 20-style distribution update:
+
+- Expanded the implemented style set from 19 to 20 routes
+- Added `low-key-cinematic-photography` for low-light environments, localized continuous light, readable shadows, realistic materials, restrained color, and cinematic-still storytelling
+- Added compound routing boundaries against dark-gold CCD direct flash, ultra-close facial realism, pure-desire curve direction, generic dark backgrounds, and e-commerce garment restoration
+- Updated onboarding, the Skill card, public instructions, parameter schema, examples, and all registries to the V1.6 20-style experience
+- Expanded the installable package from 61 to 62 files
+
 ## FEMALE-PORTRAIT-DIRECTOR-V1.5
 
 Five-route expansion, onboarding, and distribution update:

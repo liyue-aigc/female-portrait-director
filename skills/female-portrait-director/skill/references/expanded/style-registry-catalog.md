@@ -2,7 +2,7 @@
 
 # 女性人像提示词导演 Skill｜风格注册表与路由分流规则
 
-版本编号：`FEMALE-PORTRAIT-DIRECTOR-V1.5`
+版本编号：`FEMALE-PORTRAIT-DIRECTOR-V1.6`
 文档类型：风格注册表 / 路由分流规则文档
 适用范围：所有女性人像提示词生成、参数组合推荐、提示词优化、图片反推提示词、失败诊断、审查友好改写、Skill 内部 route / overlay / tool 调用
 核心职责：根据用户输入识别任务类型、主风格、辅助气质、扩展包、工具模式，并将请求分流到正确文档；本文件只负责注册与分流，不负责具体风格母版扩写
@@ -1293,7 +1293,7 @@ status: priority
 
 ---
 
-# 7A. V1.5 新增 5 个 Route 注册表
+# 7A. V1.5 / V1.6 新增 6 个 Route 注册表
 
 以下 Route 已实现，运行时以 [../../style-registry.md](../../style-registry.md) 的轻量注册表和对应 Route 文件为准。
 
@@ -1301,6 +1301,7 @@ status: priority
 | --- | --- | --- | --- | --- |
 | `ultra-close-real-face` | 超近景真实人脸人像 | realism | 超近景 / 怼脸 + 未修图 + 真实皮肤微纹理 | `skill/routes/realism/ultra-close-real-face.md` |
 | `ancient-lady-dewy-makeup` | 古风贵女水光妆 | beauty | 古风贵女 + 水光显妆 / 玻璃唇 + 美妆近景 | `skill/routes/beauty/ancient-lady-dewy-makeup.md` |
+| `low-key-cinematic-photography` | 低调电影感摄影 | cinematic | 低照度 / 暗背景 + 局部连续光 / 环境光 + 可读暗部 + 低饱和电影静帧 | `skill/routes/cinematic/low-key-cinematic-photography.md` |
 | `black-pearl-dark-gold-ccd` | 黑珍珠墨金CCD曲线生活照 | curve | 夜间 + 墨金暗部 + 暗金反光 + 柔和直闪 | `skill/routes/curve/black-pearl-dark-gold-ccd.md` |
 | `soft-ccd-energetic-voluptuous` | 元气丰腴柔光CCD生活照 | curve | 元气明亮 + 丰腴自然曲线 + 亮色穿搭 + 柔闪 | `skill/routes/curve/soft-ccd-energetic-voluptuous.md` |
 | `cold-white-clear-ccd-curve` | 冷白清透CCD曲线生活照 | curve | 日间高色温 + 冷白清透 + 纤细曲线 + 极弱柔闪 | `skill/routes/curve/cold-white-clear-ccd-curve.md` |
@@ -2913,6 +2914,9 @@ fantasy：古风 / 仙侠 / 东方幻想 / 角色写真
 oriental：新中式 / 旗袍 / 宋韵 / 水墨 / 禅意
 curve：身形曲线 / 纯欲 / 丰腴 / 健康线条
 commercial：电商 / 美妆 / 珠宝 / 品牌广告
+realism：超近景真实人脸 / 未修图原片 / 皮肤微纹理
+beauty：妆容特写 / 水光妆 / 美妆方向
+cinematic：低照度 / 局部连续光 / 电影静帧 / 暗部叙事
 ```
 
 新增 route 必须归入其中一个分类。

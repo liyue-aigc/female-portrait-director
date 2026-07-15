@@ -6,7 +6,7 @@
 
 
 
-版本编号：`FEMALE-PORTRAIT-DIRECTOR-V1.5`
+版本编号：`FEMALE-PORTRAIT-DIRECTOR-V1.6`
 
 文档类型：核心规则文档
 

@@ -7,7 +7,7 @@ Chinese Name:
 女性人像提示词导演 Skill
 
 Version:  
-FEMALE-PORTRAIT-DIRECTOR-V1.5
+FEMALE-PORTRAIT-DIRECTOR-V1.6
 
 Author:  
 李岳

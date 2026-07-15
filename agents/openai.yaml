@@ -1,4 +1,4 @@
 interface:
   display_name: "女性人像提示词导演"
-  short_description: "19种风格的女性人像导演式提示词与授权参考图生成能力"
-  default_prompt: "使用 $female-portrait-director 显示 V1.5 首次使用教程，列出全部 19 种风格，并演示如何把一组参数生成详细女性人像提示词。"
+  short_description: "20种风格的女性人像导演式提示词与授权参考图生成能力"
+  default_prompt: "使用 $female-portrait-director 显示 V1.6 首次使用教程，列出全部 20 种风格，并演示如何把一组参数生成详细女性人像提示词。"
