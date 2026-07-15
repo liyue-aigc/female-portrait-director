@@ -14,11 +14,11 @@ This is not a generic prompt collection. It locks explicit requirements, chooses
 
 | Clean lifestyle | Urban fashion | Gufeng xianxia |
 | --- | --- | --- |
-| ![Natural cafe lifestyle portrait](assets/cases/01-clean-lifestyle.png) | ![Urban storefront fashion portrait](assets/cases/02-urban-fashion.png) | ![Moon-white gufeng xianxia portrait](assets/cases/03-gufeng-xianxia.png) |
-| E-commerce model | Retro Hong Kong | New Chinese |
-| ![Garment-first ecommerce model image](assets/cases/04-ecommerce-model.png) | ![Retro Hong Kong cinematic portrait](assets/cases/05-retro-hongkong.png) | ![Modern New Chinese tea-room portrait](assets/cases/06-new-chinese.png) |
+| ![Sunlit clean lifestyle portrait by a cafe window](assets/cases/01-clean-lifestyle.png) | ![Urban fashion street portrait outside a shopping mall](assets/cases/02-urban-fashion.png) | ![Red-and-gold gufeng xianxia portrait](assets/cases/03-gufeng-xianxia.png) |
+| Hong Kong street | French effortless | Pure-desire curves |
+| ![Golden-hour Hong Kong street portrait](assets/cases/04-retro-hongkong-street.png) | ![French effortless portrait on a Paris balcony](assets/cases/05-french-lazy.png) | ![Pure-desire curve-focused lifestyle portrait](assets/cases/06-pure-desire-curve.png) |
 
-Each case proves a different job: natural lifestyle direction, outfit-led street photography, complex costume organization, garment-first commercial framing, cinematic atmosphere, and restrained Eastern negative space. See the [six-case publishing pack](docs/女性人像提示词导演-6个视觉案例发布包.md) for the inputs and release copy.
+The six cases cover clean lifestyle, urban fashion, gufeng xianxia, Hong Kong street photography, French effortless portraiture, and curve-focused lifestyle direction.
 
 ## Try it in 60 seconds
 

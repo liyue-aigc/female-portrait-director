@@ -14,11 +14,11 @@
 
 | 清纯生活 | 都市时尚 | 古风仙侠 |
 | --- | --- | --- |
-| ![咖啡馆自然生活照](assets/cases/01-clean-lifestyle.png) | ![玻璃橱窗都市街拍](assets/cases/02-urban-fashion.png) | ![月白冰蓝古风仙侠写真](assets/cases/03-gufeng-xianxia.png) |
-| 电商模特 | 复古港风 | 新中式 |
-| ![服装展示优先的电商模特图](assets/cases/04-ecommerce-model.png) | ![复古港风电影人像](assets/cases/05-retro-hongkong.png) | ![新中式茶室留白人像](assets/cases/06-new-chinese.png) |
+| ![咖啡馆窗边清纯生活照](assets/cases/01-clean-lifestyle.png) | ![商场外都市时尚街拍](assets/cases/02-urban-fashion.png) | ![红金华服古风仙侠写真](assets/cases/03-gufeng-xianxia.png) |
+| 港风街拍 | 法式慵懒 | 纯欲曲线 |
+| ![夕阳老街港风写真](assets/cases/04-retro-hongkong-street.png) | ![巴黎阳台法式慵懒写真](assets/cases/05-french-lazy.png) | ![清透生活感纯欲曲线写真](assets/cases/06-pure-desire-curve.png) |
 
-六个案例分别验证：自然生活瞬间、穿搭街拍导演、复杂古风造型组织、服装展示优先级、港片氛围和东方留白。完整输入与连续发布文案见[六个视觉案例发布包](docs/女性人像提示词导演-6个视觉案例发布包.md)。
+六个案例依次展示：清纯生活、都市时尚、古风仙侠、港风街拍、法式慵懒和纯欲曲线。
 
 ## 60 秒开始使用
 
